@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br" >
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <nav style="background-color: aquamarine !important;" class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Dados</span>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th>id</th>
+                <th>nome</th>
+                <th>idade</th>
+            </tr>
+    
+            {% for usuario in usuarios%}
+    
+            <tr>
+                <td>{{usuario.id_usuario}}</td>
+                <td>{{usuario.nome}}</td>
+                <td>{{usuario.idade}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+  </body>
+
+
+
+</form>
